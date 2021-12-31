@@ -1,0 +1,207 @@
+:root {
+  --section-width: 600px;
+  --section-padding: 10px;
+  --section-border: 1px solid black;
+  --section-marginTop: 50px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* height: 100%; */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section {
+  margin-top: var(--section-marginTop);
+  border: var(--section-border);
+  padding: var(--section-padding);
+  width: var(--section-width);
+  margin-inline: auto;
+}
+
+.section--capcalera {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: grid;
+  place-content: center;
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border: 1px solid blue;
+  background: rgb(156, 148, 148);
+  width: 100px;
+  height: 30px;
+  list-style: none;
+}
+
+.nav ul li:hover {
+  background-color: yellow;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.first__section h2 {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.imageText img {
+  float: left;
+  width: 50%;
+}
+
+.img1 {
+  float: left;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.rightParagraph {
+  margin-right: 15px;
+  text-align: left;
+}
+
+#p2 {
+  clear: left;
+  margin-right: 15px;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+/*-------------------------------------------*/
+#section2 {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section2 h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+#section2 .gorro {
+  list-style-image: url('../img/gorro_cocina.png');
+}
+
+#section2 .gorro ul {
+  list-style: decimal;
+}
+
+#section2 .secondLevel {
+  font-size: 12px;
+}
+
+#section2 .ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondLevel {
+  margin: 0 40px;
+}
+
+/*-------------------------------------*/
+#section3 h2 {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+#section3 h2+p {
+  margin-top: 0;
+}
+
+.p3_1 {
+  line-height: 30px;
+  color: blue;
+}
+
+.p3_1 span {
+  color: red;
+}
+
+#section3 p {
+  margin-top: 20px;
+}
+
+/* -------------------------------------- */
+#section4 {
+  margin-bottom: 50px;
+}
+
+#section4 h2 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid blue;
+  padding: 5px;
+  width: 50px;
+  height: 30px;
+}
+
+caption a:visited {
+  color: green;
+}
+
+/*------------------------------*/
+
+.validate {
+  text-align: center;
+  /* position: fixed;
+  top: 20%;
+  left: 20%; */
+}
+
+.validate img {
+  border: 0;
+  width: calc(88px * 2);
+  height: calc(31px *2);
+}
